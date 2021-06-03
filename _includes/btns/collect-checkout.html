@@ -1,0 +1,27 @@
+<div id="checkout_button" class="bm-btn bill-pay">Pay Bill</div>
+<script src="https://secure.nmi.com/token/CollectCheckout.js"
+  data-checkout-key="checkout_public_adf3D79Q76Wz2k9uYE4zTkMp3WYc896W"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function (e) {
+    document.getElementById('checkout_button').addEventListener('click', function (e) {
+      CollectCheckout.redirectToCheckout({
+        lineItems: [{
+          lineItemType: "customPayment",
+          description: "Bill Payment",
+          currency: "USD"
+        }, ],
+        successUrl: null,
+        cancelUrl: "https://www.beautifulmindsmedical.com/",
+        receipt: {
+          showReceipt: true,
+          sendToCustomer: true,
+        },
+        paymentMethods: [{
+          type: "creditCard",
+        }, ],
+      }).then((error) => {
+        console.log(error);
+      });
+    });
+  });
+</script>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+{% assign theid = 12 %}
+{% if page.theid %}
+  {% assign theid = page.theid %}
+{% endif %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="/wp-content/themes/bmm/favicon.ico">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!-- 
+    ===============
+    SEO STUFF 
+    ===============
+  -->
+  {% seo %}
+  <meta property="og:type" content="website">
+  <meta name="twitter:description" content="Your mind is beautiful.We can help take care of it. Learn More Patient Portal Our Services We offer a variety of treatment options with one goal in mind: a healthier, happier you. Counseling Need someone to listen? We’re here to help. Learn More Psychiatry Each mind is unique. Let us design your custom treatment plan. […]">
+  <meta name="twitter:image" content="/wp-content/uploads/bb-plugin/cache/Counseling-circle.jpg">
+  {% feed_meta %}
+  {% include google_tag_manager_head.html %}
+  <script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">
+    {
+      "@context": "https://schema.org",
+      "@graph": [{
+        "@type": "WebSite",
+        "@id": "https://www.beautifulmindsmedical.com/#website",
+        "url": "https://www.beautifulmindsmedical.com/",
+        "name": "Beautiful Minds Medical",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.beautifulmindsmedical.com/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }, {
+        "@type": "ImageObject",
+        "@id": "https://www.beautifulmindsmedical.com/#primaryimage",
+        "url": "https://www.beautifulmindsmedical.com//wp-content/uploads/bb-plugin/cache/Counseling-circle.jpg"
+      }, {
+        "@type": "WebPage",
+        "@id": "https://www.beautifulmindsmedical.com/#webpage",
+        "url": "https://www.beautifulmindsmedical.com/",
+        "inLanguage": "en-US",
+        "name": "Home - Beautiful Minds Medical",
+        "isPartOf": {
+          "@id": "https://www.beautifulmindsmedical.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://www.beautifulmindsmedical.com/#primaryimage"
+        },
+        "datePublished": "2016-12-21T11:12:31+00:00",
+        "dateModified": "2019-09-17T16:40:58+00:00"
+      }]
+    }
+  </script>
+  
+  <!-- 
+    ===============
+    STYLES 
+    ===============
+  -->
+  <link rel="dns-prefetch" href="//s.w.org">
+  {% for css in site.data.default_files.css_files %}
+    <link rel="stylesheet" id="{{ css.theid }}" href="{{ css.thelink }}" type="text/css" media="{{ css.media }}">
+  {% endfor %}
+  <style type="text/css" id="wp-custom-css">
+    .highlight5 .field.reset-button,
+    .highlight1 .field.reset-button,
+    .highlight2 .field.reset-button,
+    .highlight3 .field.reset-button,
+    .highlight4 .field.reset-button,
+    .highlight6 .field.reset-button,
+    .highlight7 .field.reset-button {
+      background: #729600 !important;
+      background: -moz-linear-gradient(top, #729600 0%, #719500 12%, #5b7800 100%) !important;
+      background: -webkit-linear-gradient(top, #729600 0%, #719500 12%, #5b7800 100%) !important;
+      background: linear-gradient(to bottom, #729600 0%, #719500 12%, #5b7800 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#729600', endColorstr='#5b7800', GradientType=0);
+      border-bottom: 2px solid #2e6600 !important;
+      border-radius: 5px;
+      text-align: center;
+      color: #fff !important;
+      font-size: 20px;
+      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+      -moz-text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+      -webkit-text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+      -ms-text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+      -o-text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+      font-family: 'crete_roundregular';
+      cursor: pointer;
+    }
+
+    .highlight2 #field_1-8 {
+      background: #eee !important;
+    }
+
+    .form-style2 #fbuilder .left_aligned #field_1-3.fields label {
+      width: auto;
+      margin-right: auto;
+    }
+
+    .fields.fieldname4_1.cff-calculated-field {
+      display: flex;
+    }
+
+    .makegreen {
+      background: #648600 !important;
+      display: flex;
+    }
+
+    .makegreen label {
+      color: #ffffff;
+    }
+
+    .makegreen span {
+      color: #ffffff !important;
+      font-size: 16px !important;
+      min-width: max-content;
+    }
+
+    .page-id-2651 .highlight2 #field_1-8 {
+      color: #ffffff !important;
+      font-size: 16px !important;
+      background: #648600 !important;
+    }
+  </style>
+
+  <link rel="stylesheet" id="fl-builder-layout-{{ theid }}-css" href="/wp-content/uploads/bb-plugin/cache/{{ theid }}-layout.css" type="text/css" media="all">
+  {% for css in layout.css_files %}
+    <link rel="stylesheet" id="{{ css.theid }}" href="{{ css.thelink }}" type="text/css" media="{{ css.media }}">
+  {% endfor %}
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  
+  <!-- 
+    ===============
+    JS 
+    ===============
+  -->
+  {% for js in site.data.default_files.js_files %}
+    <script type="text/javascript" src="{{ js }}"></script>
+  {% endfor %}
+  <script type="text/javascript">
+    var theme_url = "https://www.beautifulmindsmedical.com//wp-content/themes/bmm/",
+      ajax_url = "https://www.beautifulmindsmedical.com/wp-admin/admin-ajax.php",
+      home_url = "https://www.beautifulmindsmedical.com/";
+  </script>
+  
+  {% for js in layout.js_files %}
+    <script type="text/javascript" src="{{ js }}"></script>
+  {% endfor %}
+
+</head>
+
+<body class="{{layout.body_classes}} {{page.body_classes}} page-id-{{theid}} page page-template-default fl-builder" {% if site.data.notification.enable %} onload="theSnackBar();" {% endif %}>
+  <!-- <img src="/wp-content/uploads/2020/01/Award_cintillo_web-03.png" width="100%" alt=""> -->
+  {% include google_tag_manager_body.html %}
+  
+  {% include navbar.html %}
+  
+  {% if layout.bc %}
+    {% include breadcrumb.html %}
+  {% endif %}
+  
+  {{ content }}
+
+  <!-- MORE CSS -->
+  {% for css in layout.css_files_bottom %}
+    <link rel="stylesheet" id="{{ css.theid }}" href="{{ css.thelink }}" type="text/css" media="{{ css.media }}">
+  {% endfor %}
+  
+  <!-- FOOTER -->
+  {% include footer.html %}
+  
+  <!-- Google Analytics -->
+  {% include google_analytics.html %}
+
+  <!-- MORE JS -->
+  {% for js in site.data.default_files.js_files_bottom %}
+    <script type="text/javascript" src="{{ js }}"></script>
+  {% endfor %}
+
+  <script type="text/javascript" src="/wp-content/uploads/bb-plugin/cache/{{theid}}-layout.js"></script>
+  {% for js in layout.js_files_bottom %}
+    <script type="text/javascript" src="{{ js }}"></script>
+  {% endfor %}
+
+  <div class="redirect-msg-overlay" style="display:none;">
+    <div class="redirect-msg" style="display:none;">
+      <p>You will be redirected to the Beautiful Minds Wellness website in few seconds.</p>
+      <input type="button" name="redirectBtn" id="cancel-redirect" value="Cancel">
+    </div>
+  </div>
+  {% include snackbar.html %}
+  <script>
+    
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<div class="breadcrumbs-wrapper">
+  <div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+    <!-- <span property="itemListElement" typeof="ListItem">
+      <a property="item" typeof="WebPage" title="Go to Beautiful Minds Medical."
+        href="/" class="home">
+        <span property="name">Home</span>
+      </a>
+      <meta property="position" content="1">
+    </span> >
+    <span property="itemListElement" typeof="ListItem">
+      <a property="item" typeof="WebPage" title="Go to About." href="/about" class="post post-page">
+        <span property="name">About</span>
+      </a>
+      <meta property="position" content="2">
+    </span> > 
+    <span property="itemListElement" typeof="ListItem">
+      <span property="name">About Beautiful Minds</span>
+      <meta property="position" content="3">
+    </span> -->
+    {% breadcrumb %}
+      {{page.url}}
+    {% endbreadcrumb %}
+  </div>
+</div>

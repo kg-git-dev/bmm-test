@@ -1,0 +1,5 @@
+hero_vid_rgba: 'rgba(0, 0, 0, 0.4)'
+hero_text_rgba: 'rgb(255, 255, 255)'
+hero_button_text_rgba: 'rgb(255, 255, 255)'
+notification_background_rgba: 'rgba(100, 163, 81, 1)'
+notification_text_rgba: 'rgb(255, 255, 255)'

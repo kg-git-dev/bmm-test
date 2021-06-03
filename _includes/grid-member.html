@@ -1,0 +1,17 @@
+<div class="grid-item">
+  <div class="item">
+    <div class="item-photo">
+      {% if include.member.has_link %}<a href="{{include.member.url}}" rel="bookmark" title="{{include.member.name}}">{% endif %}
+      <img src="{{include.member.photo_image}}"
+           alt="{{include.member.name}}" title="{{include.member.name}}" 
+           srcset="{{include.member.photo_image}} 260w,{{include.member.small_image}} 229w"
+           sizes="(max-width: 260px) 100vw, 260px">
+      {% if include.member.has_link %}</a>{% endif %}
+    </div>
+    <div class="item-info">
+      {% if include.member.has_link %}<a href="{{include.member.url}}" title="{{include.member.name}}">{% endif %}
+        {{include.member.name}}
+      {% if include.member.has_link %}</a>{% endif %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,109 @@
+- name: Home
+  link: /
+  ignore: true
+- name: About
+  link: /about/treating-mental-health-why-how-what
+  dropdown:
+    - name: Our Treatment Philosophy
+      link: /about/treating-mental-health-why-how-what
+    - name: Our Team
+      link: /about/treatment-team
+      dropdown:
+        - name: Dr. Daniel Binus, MD
+          link: /treatment-team/dr-daniel-binus
+        - name: Robert Nordman, PA-C
+          link: /treatment-team/robert-nordman
+        - name: Melissa Frost, PMHNP-BC
+          link: /treatment-team/melissa-frost
+        - name: Jonathan Edens, PA-C
+          link: /treatment-team/jonathan-edens
+        - name: Amanda Anguish, LMFT
+          link: /treatment-team/amanda-anguish-lmft
+        - name: K'dee Elsen, Ph.D.
+          link: /treatment-team/kdee-elsen
+        - name: Jayne Weir, MSW, LCSW
+          link: /treatment-team/jayne-weir
+    - name: Conditions Treated
+      link: /about/conditions-treatment
+      dropdown:
+        - name: Depressive Disorders
+          link: /mental-health-conditions/depressive-disorders
+        - name: Anxiety Disorders
+          link: /mental-health-conditions/anxiety-disorders-ptsd-ocd-gad-panic-disorder
+        - name: Bipolar Mood Disorder
+          link: /mental-health-conditions/bipolar-mood-disorder
+        - name: Attention Deficit Hyperactivity Disorder
+          link: /mental-health-conditions/attention-deficit-hyperactivity-disorder-adhd
+        - name: Psychotic Disorders
+          link: /mental-health-conditions/psychotic-disorders-schizophrenia-and-schizoaffective
+        - name: Eating Disorders
+          link: /mental-health-conditions/eating-disorders
+        - name: Substance Use Disorders
+          link: /mental-health-conditions/substance-use-disorders
+    - name: Office Info
+      link: /about/patient-payment-policy
+      dropdown:
+        - name: Office Policy
+          link: /about/patient-payment-policy
+        - name: Office FAQ
+          link: /about/office-faq
+    - name: Photo Gallery
+      link: /about/photo-gallery
+- name: Patients
+  link: /for-patients/patient-portal
+  dropdown:
+    - name: Test Your Mental Health
+      link: /for-patients/patient-forms/patient-health-questionnaire-phq-9
+      dropdown:
+        - name: Depression Screening
+          link: /for-patients/patient-forms/patient-health-questionnaire-phq-9
+        - name: Anxiety Screening
+          link: /for-patients/patient-forms/generalised-anxiety-disorder-questionnaire-gad-7
+        - name: Alcohol Use Screening
+          link: /for-patients/patient-forms/audit-c-alcohol-use
+        - name: Drug Abuse Screening
+          link: /for-patients/patient-forms/drug-abuse-screening
+        - name: PTSD Screening
+          link: /for-patients/patient-forms/primary-care-ptsd-screen-pc-ptsd
+        - name: Mood Disorder Screening
+          link: /for-patients/patient-forms/mdq
+    - name: Patient Forms
+      link: /for-patients/patient-forms
+    - name: Patient Portal
+      link: /for-patients/patient-portal
+    - name: Helpful Resources
+      link: https://beautifulmindsoutpatient.com
+      # link: /for-patients/external-resources
+    # - name: New Patient Questionnaire
+    #   link: /for-patients/new-patient-questionnaire
+    # - name: PAY BILL
+    #   link: /bill-payment
+- name: Providers
+  link: /for-physicians/
+- name: Services
+  link: /about/our-services/
+  dropdown:
+    - name: Psychiatry
+      link: /about/our-services/#psychiatry
+    - name: Counseling
+      link: /about/our-services/#counseling
+    - name: Intensive Outpatient Program
+      link: https://beautifulmindsoutpatient.com
+      # link: /for-patients/intensive-outpatient-program
+    - name: Advanced TMS Therapy
+      link: /advanced-tms-therapy
+    - name: Life & Health Coaching
+      link: /about/our-services/#coaching
+    # - name: Blog
+    #   link: /blog
+- name: Blog
+  link: /blog
+# - name: Store
+#   link: https://beautifulmindsnutrition.com
+# - name: Give
+#   link: /give/
+- name: Contact
+  link: /contact/
+  dropdown:
+    - name: Give
+      link: /give/

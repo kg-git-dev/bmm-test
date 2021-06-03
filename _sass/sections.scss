@@ -1,0 +1,263 @@
+// =====================
+// Hero Home Section
+// =====================
+.video-container {
+  overflow: hidden;
+  height: 544px;
+  position: relative;
+  top: -20px;
+
+  video {
+    margin-top: -100px;
+  }
+
+  .video-overlay {
+    background-color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: block;
+    opacity: 0.7;
+  }
+
+  .content {
+    position: relative;
+    top: -400px;
+
+    h1, a {
+      color: white;
+    }
+  }
+}
+
+.fl-col-group.fl-node-585a70170d878 {
+  display: flex;
+  justify-content: center;
+}
+
+.fl-node-585a70170b034 .fl-row-content-wrap {
+  background-image: 
+    linear-gradient(
+      $hero_color, 
+      $hero_color
+    ),
+    // url(/wp-content/uploads/2020/06/patients_saying.jpg) !important;
+    url(/wp-content/uploads/2020/06/bmm_hero_short.gif) !important;
+
+  background-position: bottom;
+  background-size: cover;
+
+  // @media (max-width: 767px) {
+  //   background-image: url(/wp-content/uploads/2020/06/bmm_hero_short.gif) !important;
+  // }
+}
+
+@media screen and (max-width: 1010px) {
+  .hero-banner .fl-row-content-wrap:after {
+    background:
+      // linear-gradient(
+      //   rgba(0, 0, 10, 0.7), 
+      //   rgba(0, 0, 10, 0.7)
+      // ),
+      url(/wp-content/uploads/2020/06/bmm_hero_short.gif) !important;
+
+    background-position: bottom !important;
+    background-size: cover !important;
+  }
+
+  .play-button {
+    width: 115px !important;
+    height: 115px !important;
+    padding-top: 35px !important;
+    padding-left: 8px !important;
+    font-size: 25px !important;
+  }
+}
+
+.play-container {
+  // padding: 45px 0 0 80px;
+  padding: 30px 0 0 0;
+  display: grid;
+  justify-content: center;
+}
+
+.play-button {
+	box-sizing: border-box;
+	display:block;
+	width:140px;
+	height:140px;
+	padding-top: 40px;
+	padding-left: 17px;
+	line-height: 20px;
+	// border: 6px solid #fff;
+  border-radius: 50%;
+  // color:#fafafa;
+  // color:#fafafa8c;
+  color: $primary-color;
+	text-align:center;
+	text-decoration:none;
+	background-color: rgba(0,0,0,0.5);
+	font-size:30px;
+	font-weight:bold;
+  transition: all 0.3s ease;
+}
+.play-button:hover {
+	background-color: rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 10px rgb(255, 255, 255);
+	text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.play-title {
+  color: #fafafa8c;
+  // color: $primary-color;
+}
+
+#hero-play-btn {
+  transform: scale(1.5);
+  width: 200px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3.5em !important;
+  margin-bottom: 0;
+  // text-shadow: 1px 1px black;
+  font-weight: 900;
+}
+
+.hero-subtitle {
+  font-family: "Roboto" !important;
+  font-size: 2.5em !important;
+  font-weight: 300;
+  margin-top: 0;
+  // text-shadow: 1px 1px black;
+}
+
+.hero-video-banner {
+  position: relative;
+  margin-top: -25px;
+  width: 100%;
+
+  &.fixed-height {
+    height: 554px;
+    // height: 650px;
+
+    .hero-video-container {
+      height: 100%;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+      height: 259px;
+    }
+  }
+  
+  &.aspect-1080 {
+    padding-top: 56.25%;
+
+    .hero-video-container {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &.max-width {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 0px;
+  }
+
+  .hero-video-container {
+    position: absolute;
+
+    #bg-hero-gif {
+      visibility: hidden;
+
+      @media screen and (max-width: 767px) {
+        visibility: visible;
+      }
+    }
+
+    .hero-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+    }
+  
+    .overlay {
+      background-color: $hero_color;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: grid;
+      justify-content: center;
+      align-content: center;
+
+      .btn-container {
+        display: flex;
+        justify-content: center;
+
+        .fl-button.primary {
+          font-family: crete_roundregular;
+          font-weight: 700;
+          font-size: 20px!important;
+          border: none;
+
+          @media screen and (max-width: 767px) {
+            font-size: 13px !important;
+            width: 120px !important;
+            padding: 7px;
+          }
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        font-size: 8px;
+      }
+    }
+  }
+}
+
+// =========================================
+// "What Patients are Saying" Home Section
+// =========================================
+.fl-row-content-wrap.patients-saying {
+  // background: red !important;
+  // background-image: url(/wp-content/uploads/2020/06/patients_saying.jpg) !important;
+  background: 
+    linear-gradient(
+      rgba(0, 0, 50, 0.3), 
+      rgba(0, 0, 50, 0.3)
+    ),
+    url(/wp-content/uploads/2020/06/patients_saying.jpg);
+  background-position: bottom;
+  background-size: cover;
+  box-shadow: inset 0 0 300px black;
+
+  .fl-heading-text-light, .content, .author {
+    color: white !important;
+  }
+}
+
+// ==============================
+// "Get Help Now" About Section
+// ==============================
+.get-help-now-section .fl-row-content-wrap {
+  background-image: 
+    linear-gradient(
+      rgba(0, 10, 0, 0.7), 
+      rgba(0, 10, 0, 0.7)
+    ),
+    // url(/wp-content/uploads/2020/06/patients_saying.jpg) !important;
+    url(/wp-content/uploads/2020/06/leaf.jpg) !important;
+  // background-image: url(/wp-content/uploads/2020/06/green.jpg);
+}

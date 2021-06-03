@@ -1,0 +1,61 @@
+#snackbar {
+  font-family: "ProximaNovaBold";
+  visibility: hidden;
+  display: flex;
+  width: 100%;
+  background-color: $notification_bg_color;
+  color: $notification_color;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 16px;
+
+  .empty-item, .snack-button {
+    flex-basis: 30px;
+  }
+
+  .snack-button {
+    color: $notification_color !important;
+    text-align: center;
+    padding: 0 12px;
+  }
+
+  .close {
+    cursor: pointer;
+    color: $notification_color !important;
+    display: grid;
+    align-content: center;
+
+    &:hover {
+      color: darken($notification_color, 35%) !important;
+    }
+  }
+}
+
+#snackbar.show {
+  visibility: visible;
+  // -webkit-animation: fadein 0.5s, fadeout 0.5s 6.5s;
+  // animation: fadein 0.5s, fadeout 0.5s 6.5s;
+}
+
+// @-webkit-keyframes fadein {
+//   from {top: 0; opacity: 0;} 
+//   to {top: 30px; opacity: 1;}
+// }
+
+// @keyframes fadein {
+//   from {top: 0; opacity: 0;}
+//   to {top: 30px; opacity: 1;}
+// }
+
+// @-webkit-keyframes fadeout {
+//   from {top: 30px; opacity: 1;} 
+//   to {top: 0; opacity: 0;}
+// }
+
+// @keyframes fadeout {
+//   from {top: 30px; opacity: 1;}
+//   to {top: 0; opacity: 0;}
+// }

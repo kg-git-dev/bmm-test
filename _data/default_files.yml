@@ -1,0 +1,24 @@
+css_files:
+  - theid: wp-block-library-css
+    thelink: /wp-includes/css/dist/block-library/style.min.css
+    media: all
+  - theid: tp_twitter_plugin_css-css
+    thelink: /wp-content/plugins/recent-tweets-widget/tp_twitter_plugin.css
+    media: screen
+  - theid: wp-pagenavi-css
+    thelink: /wp-content/plugins/wp-pagenavi/pagenavi-css.css
+    media: all
+  - theid: style-css
+    thelink: /wp-content/themes/bmm/css/style.css
+    media: all
+  - theid: recent-posts-widget-with-thumbnails-public-style-css
+    thelink: /wp-content/plugins/recent-posts-widget-with-thumbnails/public.css
+    media: all
+  - theid: rootstyle
+    thelink: /css/styles.css
+    media: all
+js_files:
+  - /wp-includes/js/jquery/jquery.js
+  - /wp-includes/js/jquery/jquery-migrate.min.js
+js_files_bottom:
+  - /wp-content/themes/bmm/js/custom.js

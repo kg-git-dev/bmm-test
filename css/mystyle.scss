@@ -1,0 +1,35 @@
+---
+---
+
+.is-primary.fl-button {
+  background: #64a351 !important;
+  border: 1px solid #589745 !important;
+  border-radius: 0 !important;
+}
+
+.is-primary.fl-button .fl-button-text {
+  color: #fff !important;
+}
+
+.freebook {
+  text-align: center;
+}
+
+.freebook .positionbtn {
+  position: relative;
+  bottom: 140px;
+}
+
+.is-large {
+  transform: scale(1.3);
+}
+
+h3.is-primary {
+  color: #64a351;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 400px auto;
+  justify-content: start;
+}

@@ -1,0 +1,55 @@
+---
+layout: default
+body_classes: page-child parent-pageid-16
+bc: true
+css_files:
+  - theid: gforms_reset_css-css 
+    thelink: /wp-content/plugins/gravityforms/css/formreset.min.css
+    media: all
+  - theid: gforms_formsmain_css-css 
+    thelink: /wp-content/plugins/gravityforms/css/formsmain.min.css
+    media: all
+  - theid: gforms_ready_class_css-css 
+    thelink: /wp-content/plugins/gravityforms/css/readyclass.min.css
+    media: all
+  - theid: gforms_browsers_css-css 
+    thelink: /wp-content/plugins/gravityforms/css/browsers.min.css
+    media: all
+  - theid: gsurvey_css-css 
+    thelink: /wp-content/plugins/gravityformssurvey/css/gsurvey.css
+    media: screen
+js_files:
+  - /wp-content/plugins/gravityforms/js/jquery.json.min.js
+  - /wp-content/plugins/gravityforms/js/gravityforms.min.js
+  - /wp-content/plugins/gravityforms/js/conditional_logic.min.js
+  - /wp-content/plugins/gravityforms/js/jquery.maskedinput.min.js
+  - /wp-includes/js/jquery/ui/core.min.js
+  - /wp-includes/js/jquery/ui/widget.min.js
+  - /wp-includes/js/jquery/ui/mouse.min.js
+  - /wp-includes/js/jquery/ui/sortable.min.js
+  - /wp-content/plugins/gravityformssurvey/js/gsurvey.js
+js_files_bottom:
+  - /wp-content/uploads/bb-plugin/cache/13-layout-partial.js
+  - /wp-content/uploads/bb-plugin/cache/14-layout-partial.js
+---
+<script type="text/javascript">
+  /* <![CDATA[ */
+  var gf_global = {
+    "gf_currency_config": {
+      "name": "U.S. Dollar",
+      "symbol_left": "$",
+      "symbol_right": "",
+      "symbol_padding": "",
+      "thousand_separator": ",",
+      "decimal_separator": ".",
+      "decimals": 2
+    },
+    "base_url": "https:\/\/www.beautifulmindsmedical.com\/wp-content\/plugins\/gravityforms",
+    "number_formats": [],
+    "spinnerUrl": "https:\/\/www.beautifulmindsmedical.com\/wp-content\/plugins\/gravityforms\/images\/spinner.gif"
+  };
+  /* ]]> */
+</script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+{{ content }}

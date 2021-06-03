@@ -1,0 +1,18 @@
+.modal.hero-vid {
+  // background-color: rgba($color: #000000, $alpha: .5);
+  background-color: transparent !important;
+  max-width: 80%;
+  width: 100%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  padding: 0;
+
+  // @media screen and (max-width: 768px) {
+    
+  // }
+}
+
+.jquery-modal.blocker.current {
+  z-index: 2;
+  padding: 0;
+}

@@ -1,0 +1,36 @@
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+{% include hero-video/mp4.html %}
+
+<script>
+  jQuery(document).ready(function () {
+    let bgvid = document.getElementById("bg-hero-video");
+    bgvid.muted = true;
+    bgvid.play();
+
+    jQuery("#hero-play-btn").click(function(event) {
+      jQuery('#hero-vid-modal').modal();
+      document.getElementById("hero-video").load();
+      document.getElementById("hero-video").play();
+      // jQuery('#hero-video').load();
+      // jQuery('#hero-video').play();
+    });
+  });
+
+  // jQuery('.bmm-videos').each(function(){
+  //   if (jQuery(this).is(":in-viewport")) {
+  //     jQuery(this)[0].parentElement.load();
+  //       jQuery(this)[0].parentElement.play();
+  //   } else {
+  //       jQuery(this)[0].pause();
+  //   }
+  // });
+
+  jQuery('#hero-vid-modal').on(jQuery.modal.BEFORE_CLOSE, function(event, modal) {
+    // jQuery("#hero-video").pause();
+    document.getElementById("hero-video").pause();
+  });
+  
+</script>

@@ -1,0 +1,49 @@
+// .bmm-footer {
+//   > div {
+//     background: $footer-color;
+//   }
+// }
+
+.fl-callout-title, .fl-heading-text {
+  color: $footer-color !important;
+}
+
+.fl-heading-text, .fl-heading-text-light {
+  font-size: 1.3em;
+
+  &.sm {
+    font-size: 26px;
+  }
+}
+
+table thead tr th {
+  background: $secondary-color !important;
+  border: 1px solid black !important;
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav {
+    background: $secondary-color !important;
+  }
+}
+
+.header .top-search .searchform {
+  background: white;
+}
+
+.fl-node-585a6bae4acc6 > .fl-row-content-wrap {
+  background: white !important;
+}
+
+.fl-post-grid {
+  h2.fl-post-grid-title {
+    a {
+      // color: $secondary-color !important;
+      text-transform: none;
+    }
+  }
+}
+
+// .side-nav li a {
+//   background: none;
+// }

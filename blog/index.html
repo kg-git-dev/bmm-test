@@ -1,0 +1,192 @@
+---
+layout: blog
+title: Blog - Beautiful Minds Medical
+theid: 165
+---
+
+<div class="fl-builder-content fl-builder-content-165 fl-builder-content-primary fl-builder-global-templates-locked"
+    data-post-id="165">
+    <div class="fl-row fl-row-full-width fl-row-bg-none fl-node-5861195f17c96 blog-roll" data-node="5861195f17c96">
+        <div class="fl-row-content-wrap">
+            <div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+                <div class="fl-col-group fl-node-5861fc29d6e94" data-node="5861fc29d6e94">
+                    <div class="fl-col fl-node-5861fc29d709b" data-node="5861fc29d709b">
+                        <div class="fl-col-content fl-node-content">
+                            <div class="fl-module fl-module-heading fl-node-5861fc29d6d16 style-heading-h2"
+                                data-node="5861fc29d6d16">
+                                <div class="fl-module-content fl-node-content">
+                                    <h1 class="fl-heading">
+                                        <span class="fl-heading-text">Mental Health & Wellness Articles</span>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fl-col-group fl-node-5861195f17cd8 fl-col-group-custom-width" data-node="5861195f17cd8">
+                    <div class="fl-col fl-node-5861195f17d13" data-node="5861195f17d13">
+                        <div class="fl-col-content fl-node-content">
+                            <div class="fl-module fl-module-blog-roll fl-node-5861195f17ea1" data-node="5861195f17ea1">
+                                <div class="fl-module-content fl-node-content">
+                                    <div class="inner-wrapper">
+
+                                        <div class="br-banner-list">
+                                            {% for post in paginator.posts %}
+                                            <div class="br-inner">
+
+
+                                                    <div class="br-post-thumbnail">
+                                                        <a href="{{ post.url }}"
+                                                            title="{{ post.title }}">
+                                                            <img width="780" height=""
+                                                                src="{{ post.image }}"
+                                                                class="attachment-large size-large wp-post-image" alt=""
+                                                                title="{{ post.title }}"
+                                                                srcset="{{ post.image }} 750w,{{ post.med_image }} 300w"
+                                                                sizes="(max-width: 750px) 100vw, 750px"></a>
+                                                    </div>
+    
+    
+    
+    
+    
+    
+                                                    <div class="br-post-content">
+    
+                                                        <div class="br-title"><a href="{{ post.url }}"
+                                                                title="{{ post.title }}">{{ post.title }}</a></div>
+    
+                                                        <div class="entry-content">
+                                                            {{ post.content | strip_newlines | strip_html | escape | truncatewords: 53 }}
+                                                            <span class="read-more">
+                                                                <a href="{{ post.url }}" title="{{ post.title }}">
+                                                                    Read More >>
+                                                                </a>
+                                                            </span>
+                                                        </div>
+    
+    
+                                                    </div>
+    
+                                            </div>
+                                            {% endfor %}
+
+                                            <div class="wp-pagenavi" role="navigation">
+                                                <span class="pages">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+                                                {% if paginator.previous_page %}
+                                                    <a href="{{ paginator.previous_page_path }}" class="previouspostslink">«</a>
+                                                {% endif %}
+                                                {% for i in (1..paginator.total_pages) %}
+                                                    {% if i == paginator.page %}
+                                                        <span aria-current="page" class="current">{{ i }}</span>
+                                                    {% else %}
+                                                        {% if i == 1 %}
+                                                            <a class="page larger" title="Page {{ i }}" href="/blog">{{ i }}</a>
+                                                        {% else %}
+                                                            <a class="page larger" title="Page {{ i }}" href="/blog/{{ i }}">{{ i }}</a>
+                                                        {% endif %}
+                                                    {% endif %}
+                                                {% endfor %}
+                                                {% if paginator.next_page %}
+                                                    <a class="nextpostslink" rel="next" href="{{ paginator.next_page_path }}">»</a>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fl-col fl-node-5861195f17d4e fl-col-small" data-node="5861195f17d4e">
+                        <div class="fl-col-content fl-node-content">
+                            <div class="fl-module fl-module-widget fl-node-5861195f17d86 sidebar-search"
+                                data-node="5861195f17d86">
+                                <div class="fl-module-content fl-node-content">
+                                    <div class="fl-widget">
+                                        <div class="widget widget_search">
+                                            <form role="search" method="get" action="/search.html">
+                                                <div class="search-wrap searchform">
+                                                    <input type="text" name="query" class="search-term-input" placeholder="SEARCH OUR SITE">
+                                                    <input type="submit" value="Search" class="searchsubmit">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fl-module fl-module-html fl-node-586c88fc99761 blog-sidebar-callout"
+                                data-node="586c88fc99761">
+                                <div class="fl-module-content fl-node-content">
+                                    <div class="fl-html">
+
+                                        <div class="call-quote-text">
+                                            <div class="callout-call request-callbk-box widget-area">
+                                                <div class="callout-content"><span>Schedule an Appt.</span><br><span
+                                                        class="call-num">(530) 889-8780</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fl-module fl-module-widget fl-node-5861195f17dbf" data-node="5861195f17dbf">
+                                <div class="fl-module-content fl-node-content">
+                                    <div class="fl-widget">
+                                        <div class="widget recent-posts-widget-with-thumbnails">
+                                            <div id="rpwwt-fl_builder_widget_5861195f17dbf" class="rpwwt-widget">
+                                                <h2 class="widgettitle">Popular Post</h2>
+                                                <ul class="popular_posts_list">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fl-module fl-module-widget fl-node-5861195f17e68 facebook-plugin-sidebar"
+                                data-node="5861195f17e68">
+                                <div class="fl-module-content fl-node-content">
+                                    <div class="fl-widget">
+                                        <div class="widget widget_FacebookLikeBox">
+                                            <h2 class="widgettitle">Find us on Facebook</h2>
+                                            <div id="fb-root"></div>
+                                            <script>
+                                                (function (d, s, id) {
+                                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                                    if (d.getElementById(id)) return;
+                                                    js = d.createElement(s);
+                                                    js.id = id;
+                                                    js.src =
+                                                        "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+                                                    fjs.parentNode.insertBefore(js, fjs);
+                                                }(document, 'script', 'facebook-jssdk'));
+                                            </script>
+                                            <div class="fb-page"
+                                                data-href="https://www.facebook.com/BeautifulMindsMedical" data-width=""
+                                                data-height="300" data-hide-cover="true" data-show-facepile="true"
+                                                data-show-posts="true">
+                                                <div class="fb-xfbml-parse-ignore">
+                                                    <blockquote cite="https://www.facebook.com/BeautifulMindsMedical"><a
+                                                            href="https://www.facebook.com/BeautifulMindsMedical">Facebook</a>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="uabb-js-breakpoint" class="uabb-js-breakpoint" style="display: none;"></div>
+
+<script src="/js/popularpostsjson.js"></script>
+<script src="/js/popularposts.js"></script>

@@ -1,0 +1,5 @@
+enable: true
+message: Click here for the latest updates regarding COVID-19.
+link: /covid-19/
+manual_close: true
+only_once: true

@@ -1,0 +1,30 @@
+<div class="fl-module fl-module-sidebar fl-node-586df286bb959" data-node="586df286bb959">
+  <div class="fl-module-content fl-node-content">
+    <aside id="text-3" class="widget widget_text">
+      <div class="textwidget">
+        <ul class="side-nav">
+          {% side_menu %}
+            {% if include.side_nav %}
+              side_nav={{include.side_nav}},{{include.side_link}}
+            {% else %}
+              {{page.url}}
+            {% endif %}
+          {% endside_menu %}
+        </ul>
+        <div class="call-quote-text">
+          <div class="callout-call request-callbk-box widget-area">
+            <div class="callout-content"><span>Schedule an Appt.</span><br><span class="call-num">(530)
+                889-8780</span></div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <aside id="text-8" class="widget widget_text">
+      <h2 class="widget-title">Find us on Facebook</h2>
+      <div class="textwidget"><iframe
+          src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FBeautifulMindsMedical&width=147&layout=button_count&action=like&size=large&show_faces=false&share=true&height=46&appId=828238440525318"
+          style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+          allowtransparency="true"></iframe></div>
+    </aside>
+  </div>
+</div>

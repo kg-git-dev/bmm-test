@@ -1,0 +1,121 @@
+.bm-btn {
+  display: inline-block;
+  // padding: 5px 10px;
+  // font-size: 24px;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  // background-color: $primary-color;
+  background-image: linear-gradient(rgb(130, 193, 111) 0%, rgb(100, 163, 81) 100%);
+  border: none;
+  border-radius: 3px;
+  // box-shadow: 0 3px #999;
+  -webkit-box-shadow: 0px 3px 0px #277a0e;
+  box-shadow: 0px 3px 0px #277a0e;
+  font-family: inherit;
+
+  &.bill-pay {
+    padding: 7px 12px; 
+    top: -7px; 
+    position: relative;
+
+    @media only screen and (max-width: 767px) {
+      // right: 200px !important;
+      top: -45px !important;
+    }
+
+    &.disabled {
+      background-image: none;
+      background: grey;
+      cursor: no-drop;
+      -webkit-box-shadow: 0px 3px 0px rgb(73, 73, 73);
+      box-shadow: 0px 3px 0px rgb(73, 73, 73);
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .phone-number-section-top {
+    top: 70px !important;
+  }
+}
+
+.bm-btn:hover {
+  // background-color: darken( $primary-color, 10% )
+  background-image: linear-gradient(rgb(92, 156, 75) 0%, rgb(62, 126, 45) 100%);
+  -webkit-box-shadow: 0px 3px 0px #277a0e;
+  box-shadow: 0px 3px 0px #277a0e;
+}
+
+.bm-btn:active {
+  // background-color: #3e8e41;
+  // box-shadow: 0 5px #666;
+  transform: translateY(1px);
+}
+
+
+.nav-btn {
+  padding-top: 10px !important;
+
+  &:hover {
+    &.primary a {
+      // background-image: linear-gradient(rgb(130, 193, 111) 0%, rgb(100, 163, 81) 100%) !important;
+      background: $primary-color-shadow !important;
+    }
+  }
+
+  div {
+    // padding: 0px 15px !important;
+
+    a {
+      background-image: linear-gradient(rgb(130, 193, 111) 0%, rgb(100, 163, 81) 100%);
+      // color: red !important;
+      padding: 7px 7px !important;
+      border-radius: 3px;
+      -webkit-box-shadow: 0px 3px 0px #277a0e;
+      box-shadow: 0px 3px 0px #277a0e;
+      color: white;
+      cursor: pointer;
+    }
+    
+    a:active {
+      // background-color: #3e8e41;
+      // box-shadow: 0 5px #666;
+      transform: translateY(1px);
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+		div {
+      padding: 15px;
+    }
+	}
+}
+
+a.fl-button {
+  cursor: pointer;
+  &.primary {
+    background: $primary-btn-color !important;
+    -webkit-box-shadow: $primary-btn-shadow !important;
+
+    &:hover {
+      background: $primary-color-shadow !important;
+    }
+  }
+
+  &.secondary {
+    background: $secondary-btn-color !important;
+    -webkit-box-shadow: $secondary-btn-shadow !important;
+
+    &:hover {
+      background: $secondary-color-shadow !important;
+    }
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}

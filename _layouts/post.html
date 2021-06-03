@@ -1,0 +1,98 @@
+---
+layout: default
+body_classes: post-template-default single single-post postid-2876 single-format-standard
+bc: true
+js_files_bottom:
+  - /wp-content/uploads/bb-plugin/cache/13-layout.js
+  - /wp-content/uploads/bb-plugin/cache/14-layout-partial.js
+---
+
+<div class="single-br-right-sidebar">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 blog-detail-left">
+					<div class="br-inner">
+						<h1 class="br-title">{{ page.title }}</h1>
+						{% if page.show_author %}
+							<p>
+								By 
+								
+								{% if page.author_website %}
+									<b><a target="_blank" href="{{page.author_website}}">{{page.author}}</a></b>
+								{% else %}
+									<b>{{page.author}}</b> 
+								{% endif %}
+								
+								<i>{{page.date | date: "%B %d, %Y"}}</i>
+							</p>
+						{% endif %}
+
+
+						<div class="br-post-thumbnail">
+
+							<img width="780" height="" src="{{ page.image }}"
+								class="attachment-large size-large wp-post-image" alt="" title="{{ page.title }}"
+								srcset="{{ page.image }} 750w,{{ page.med_image }} 300w"
+								sizes="(max-width: 750px) 100vw, 750px">
+
+								{% include widgets/social-media-share.html %}
+							
+						</div>
+
+
+						<div class="br-post-content">
+							<div class="entry-content">
+								{{ content }}
+							</div>
+
+
+						</div>
+
+						<nav class="nav-single">
+							{% post_nav %}
+								{{page.url}}
+							{% endpost_nav %}
+						</nav>
+					</div>
+				</div>
+
+				<div class="col-md-4 blog-roll blog-detail-right">
+					<aside id="search-3" class="widget widget_search">
+						<form role="search" method="get" action="/search.html">
+							<div class="search-wrap searchform">
+								<input type="text" name="query" class="search-term-input" placeholder="SEARCH OUR SITE">
+								<input type="submit" value="Search" class="searchsubmit">
+							</div>
+						</form>
+					</aside>
+					<aside id="text-2" class="widget widget_text">
+						<div class="textwidget">
+							<div class="call-quote-text">
+								<div class="callout-call request-callbk-box widget-area">
+									<div class="callout-content"><span>Schedule an Appt.</span><br><span class="call-num">(530)
+											889-8780</span></div>
+								</div>
+							</div>
+						</div>
+					</aside>
+					<aside id="recent-posts-widget-with-thumbnails-3" class="widget recent-posts-widget-with-thumbnails">
+						<div id="rpwwt-recent-posts-widget-with-thumbnails-3" class="rpwwt-widget">
+							<h3 class="widget-title">Popular Post</h3>
+							<ul class="popular_posts_list">
+							</ul>
+						</div>
+					</aside>
+					<aside id="text-7" class="widget widget_text">
+						<h3 class="widget-title">Find us on Facebook</h3>
+						<div class="textwidget"><iframe
+								src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FBeautifulMindsMedical&width=147&layout=button_count&action=like&size=large&show_faces=false&share=true&height=46&appId=828238440525318"
+								style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="/js/popularpostsjson.js"></script>
+	<script src="/js/popularposts.js"></script>

@@ -1,0 +1,42 @@
+---
+---
+
+$primary-color: #64A351;
+$primary-color-shadow: #277a0e;
+$primary2-color: #589745;
+$primary-light-color: rgb(100, 163, 81);
+$danger-color: #FF322E;
+// $footer-brown: #372716;
+// $secondary-color: #0b163a;
+$secondary-color: #302213;
+$secondary-color-light: #15296b;
+$secondary-color-shadow: black;
+$footer-color: $secondary-color;
+
+$primary-btn-color: linear-gradient(to bottom,#82c16f 0%,#64a351 100%);
+$primary-btn-shadow: 0px 3px 0px $primary-color-shadow;
+$primary-btn-color-hover: #4b8639;
+
+// $secondary-btn-color: linear-gradient(to bottom, #787f94 0%,#535b72 100%);
+$secondary-btn-color: $footer-color;
+$secondary-btn-shadow: 0px 3px 0px black;
+$hero_color: {{site.data.colors.hero_vid_rgba}};
+$notification_bg_color: {{site.data.colors.notification_background_rgba}};
+$notification_color: {{site.data.colors.notification_text_rgba}};
+
+@import "layouts";
+@import "shadows";
+@import "snackbar";
+@import "navbar";
+@import "sections";
+@import "color-style-overrides";
+@import "buttons";
+@import "modals";
+@import "fonts";
+
+// @media only screen and (min-width: 600px) {
+//   .team.fl-post-grid.masonry {
+//     margin: 0;
+//   }
+// }
+

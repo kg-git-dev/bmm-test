@@ -1,0 +1,205 @@
+---
+layout: page
+title: Patient Forms - Beautiful Minds Medical
+theid: 50
+
+packets:
+  - title: Adult Admit Packet
+    links:
+      - title: Patient Information Form
+        code: 201097243642148
+      - title: Patient's Contact Information Form
+        code: 201100826942143
+      - title: Office Policies
+        code: 201101288542142
+      - title: Treatment Contract
+        code: 201101890844146
+      - title: Adult Personal History
+        code: 201101179044138
+      - title: Patient Health Questionnaire - 9
+        code: 201101768242142
+      - title: Spirituality Assessment
+        code: 201765410777155
+  - title: Child Admit Packet
+    links:
+      - title: Patient Information Form
+        code: 201102338042134
+      - title: Patient's Contact Information Form
+        code: 201101774142138
+      - title: Office Policies
+        code: 201102310442128
+      - title: Treatment Contract
+        code: 201174234744147
+      - title: Child Personal History
+        code: 201102094742140
+      - title: Patient Health Questionnaire - 9
+        code: 201102624442136
+  - title: IOP Admit Packet
+    links:
+      - title: Patient Information Form
+        code: 201102457544143
+      - title: Patient's Contact Information Form
+        code: 201101911242132
+      - title: Office Policies
+        code: 201102085144136
+      - title: Intensive Outpatient Treatment Contract
+        code: 201102504942138
+      - title: Welfare Contact Acknowledgement
+        code: 201102062344133
+      - title: Family Support System Involvement
+        code: 201102305844138
+      - title: Beck's Depression Inventory
+        code: 201102113742132
+      - title: Beck's Anxiety Inventory
+        code: 201107425644144
+      - title: Beck's Hopelessness Inventory
+        code: 201107627344145
+      - title: Mental Health Patients' Rights
+        url: /wp-content/uploads/2020/04/Page13-Mental-Health-Patients-Rights.pdf
+      - title: Grievance Procedure
+        code: 201107259144144
+      - title: Brown Stanley Safety Plan
+        code: 201107410144133
+      - title: Spirituality Assessment
+        code: 201765410777155
+---
+
+<div class="fl-builder-content fl-builder-content-50 fl-builder-content-primary fl-builder-global-templates-locked"
+  data-post-id="50">
+  <div class="fl-row fl-row-full-width fl-row-bg-none fl-node-586e2464d0b82 btn-uppercase" data-node="586e2464d0b82">
+    <div class="fl-row-content-wrap">
+      <div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+        <div class="fl-col-group fl-node-586e2464d3f38 fl-col-group-custom-width" data-node="586e2464d3f38">
+          <div class="fl-col fl-node-586e2464d4224" data-node="586e2464d4224">
+            {% for packet in page.packets %}
+            <div class="fl-col-content fl-node-content">
+              <div class="fl-module fl-module-heading fl-node-586e248ebb192" data-node="586e248ebb192">
+                <div class="fl-module-content fl-node-content">
+                  <h1 class="fl-heading">
+                    <span class="fl-heading-text">{{packet.title}}</span>
+                  </h1>
+                </div>
+              </div>
+              <div class="fl-module fl-module-html fl-node-586f965da9653" data-node="586f965da9653">
+                <div class="fl-module-content fl-node-content">
+                  <div class="fl-html">
+                    {% for link in packet.links %}
+                    <div class="forms-callout">
+                      {% if link.url %}
+                        <h3>
+                          {{link.title}}
+                          <a target="_blank" style="cursor: pointer;" href="{{link.url}}">View</a>
+                        </h3>
+                      {% else %}
+                        <h3>
+                          {{link.title}}
+                          <a target="_blank" style="cursor: pointer;" href="https://hipaa.jotform.com/{{link.code}}">Complete Here</a>
+                          {% comment %}
+                          {% include jotform/lightbox.html link=link %}
+                          {% endcomment %}
+                        </h3>
+                      {% endif %}
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+
+            <!-- <br><br>
+            <hr>
+            <br><br>
+
+            <div class="fl-col-content fl-node-content">
+              <div class="fl-module fl-module-heading fl-node-586e248ebb192" data-node="586e248ebb192">
+                <div class="fl-module-content fl-node-content">
+                  <h1 class="fl-heading">
+                    <span class="fl-heading-text">Patient Form Downloads</span>
+                  </h1>
+                </div>
+              </div>
+              <div class="fl-module fl-module-html fl-node-586f965da9653" data-node="586f965da9653">
+                <div class="fl-module-content fl-node-content">
+                  <div class="fl-html">
+
+                    <div class="forms-callout">
+                      <h3>Patient Emergency Contact
+                        <a href="/wp-content/uploads/2018/08/Patient-Emergency-Contact-Information.pdf" target="_blank"
+                          title="Download Now">
+                          <i class="fa fa-download"></i>
+                          Download Now</a>
+                      </h3>
+                    </div>
+
+
+                    <div class="forms-callout">
+                      <h3>Adult Personal History(18 and Older)
+                        <a href="/wp-content/uploads/2018/08/Adult-Personal-History.pdf" target="_blank"
+                          title="Download Now">
+                          <i class="fa fa-download"></i>
+                          Download Now</a>
+                      </h3>
+                    </div>
+
+
+                    <div class="forms-callout">
+                      <h3>Child/Adolescent Personal History
+                        <a href="/wp-content/uploads/2018/08/Child-History-Form.pdf" target="_blank"
+                          title="Download Now">
+                          <i class="fa fa-download"></i>
+                          Download Now</a>
+                      </h3>
+                    </div>
+
+
+                    <div class="forms-callout">
+                      <h3>Patient Information Sheet
+                        <a href="/wp-content/uploads/2018/11/Patient-Information-Sheet.pdf" target="_blank"
+                          title="Download Now">
+                          <i class="fa fa-download"></i>
+                          Download Now</a>
+                      </h3>
+                    </div>
+
+
+                    <div class="forms-callout">
+                      <h3>Office Policy
+                        <a href="/wp-content/uploads/2019/06/Office-Policies_20190101.pdf" target="_blank"
+                          title="Download Now">
+                          <i class="fa fa-download"></i>
+                          Download Now</a>
+                      </h3>
+                    </div>
+
+
+                    <div class="forms-callout">
+                      <h3>Notice of Privacy Practices
+                        <a href="/wp-content/uploads/2018/08/Notice-of-Patient-Privacy-Practices.pdf" target="_blank"
+                          title="Download Now">
+                          <i class="fa fa-download"></i>
+                          Download Now</a>
+                      </h3>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <div class="fl-col fl-node-586e2464d4277 fl-col-small" data-node="586e2464d4277">
+            <div class="fl-col-content fl-node-content">
+              <div class="fl-module fl-module-sidebar fl-node-586e27ecc84b8" data-node="586e27ecc84b8">
+                <div class="fl-module-content fl-node-content">
+                  {% include sidemenu.html %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="uabb-js-breakpoint" class="uabb-js-breakpoint" style="display: none;"></div>

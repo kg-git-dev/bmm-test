@@ -1,0 +1,118 @@
+---
+layout: page
+title: Conditions Treated
+theid: 51
+redirect_from:
+  - /mental-health-conditions/
+subsections:
+  - title: Mood Disorders
+    items:
+      - title: Definition
+        text: Mood Disorders, including depression, and bipolar disorder are characterized by an elevation or lowering of a person’s mood.
+      - title: Incidence
+        text: Approximately 20.9 million American adults, or about 9.5 percent of the US population age 18 and older in a given year, have a mood disorder. Major disorders often co-occur with anxiety disorders and substance abuse (NIH).
+  - title: Anxiety and Panic Disorders
+    items:
+      - title: Definitions
+        text: | 
+          Anxiety disorder is a multisystem response to a perceived threat of danger. It reflects a combination of biochemical changes in the body.
+          <br><br>
+          A panic attack is a sudden, intense experience of fear coupled with an overwhelming feeling of danger, accompanied by physical symptoms of anxiety, such as pounding heart, sweating, and rapid breathing.
+      - title: Incidence
+        text: |
+          Approximately 40 million American adults ages 18 and older, or about 18.1 percent of people in this age group in a given year, have an anxiety disorder.
+          <br><br>  
+          Anxiety disorders frequently co-occur with depressive disorders or substance abuse (NIH).
+  - title: Substance Abuse
+    items:
+      - title: Definitions
+        text: Substance abuse disorder is characterized by the use of a mood behavior-altering substance in a maladaptive pattern resulting in significant impairment or distress.
+      - title: Incidence
+        text: According to the Substance Abuse and Mental Health Services Administration’s (SAMHSA’s) National Survey on Drug Use and Health, 23.5 million (or 9.3 percent) persons aged 12 or older needed treatment for an illicit drug or alcohol abuse problem in 2009.
+---
+
+<div class="container bmm-pglayout1">
+  <div class="col">
+    <h1 class="fl-heading first">
+      <span class="fl-heading-text">Conditions Treated</span>
+    </h1>
+    <div class="fl-rich-text">
+      <p>Beautiful Minds Medical focuses on several major diagnostic categories:</p>
+      <ul class="style-1">
+        <li>Mood disorders</li>
+        <li>Anxiety and panic disorders</li>
+        <li>Substance abuse.</li>
+      </ul>
+    </div>
+
+    {% for ss in page.subsections %}
+    <div class="subsection conditions">
+      <!-- <h2 class="fl-heading">
+        <span class="fl-heading-text">{{ ss.title }}</span>
+      </h2> -->
+      <h2>{{ ss.title }}</h2>
+
+      {% for item in ss.items %}
+        <!-- <h3 class="fl-heading">
+          <span class="fl-heading-text">{{item.title}}</span>
+        </h3> -->
+        <strong class="fl-heading-text"><i>{{item.title}}</i></strong>
+
+        <div class="fl-rich-text">
+          <p>{{item.text}}</p>
+        </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="col">
+    {% include sidemenu.html %}
+  </div>
+</div>
+
+<div id="uabb-js-breakpoint" class="uabb-js-breakpoint" style="display: none;"></div>
+<div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-586c9182bed34 get-help-now-section"
+  data-node="586c9182bed34">
+  <div class="fl-row-content-wrap">
+    <div class="fl-row-content fl-row-fixed-width fl-node-content">
+      <div class="fl-col-group fl-node-586c9182c7cee" data-node="586c9182c7cee">
+        <div class="fl-col fl-node-586c9182c7f56" data-node="586c9182c7f56" style="width: 100%;">
+          <div class="fl-col-content fl-node-content">
+            <div class="fl-module fl-module-heading fl-node-586c91c9abf7d" data-node="586c91c9abf7d"
+              data-animation-delay="0.0">
+              <div class="fl-module-content fl-node-content">
+                <h2 class="fl-heading">
+                  <span class="fl-heading-text-light">
+                    We're here to help your beautiful mind. </span>
+                </h2>
+              </div>
+            </div>
+            <div class="fl-module fl-module-rich-text fl-node-586c9241815cc" data-node="586c9241815cc"
+              data-animation-delay="0.0">
+              <div class="fl-module-content fl-node-content">
+                <div class="fl-rich-text">
+                  <p style="text-align: center;">
+                    Contact our intake team today. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="fl-module fl-module-button fl-node-586c92d636b7d" data-node="586c92d636b7d"
+              data-animation-delay="0.0">
+              <div class="fl-module-content fl-node-content">
+                <div class="fl-button-wrap fl-button-width-auto fl-button-center">
+                  <a href="/contact" target="_self" class="fl-button" role="button">
+                    <span class="fl-button-text">
+                      Get Help Now </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

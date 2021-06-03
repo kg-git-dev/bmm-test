@@ -1,0 +1,9 @@
+{% if site.data.settings.allow_payments == "true" %}
+  <a href="https://kalosforms.com/beautifulminds/46dc66f6-6a30-4fa7-afe6-b1df60e8c90b"><div class="bm-btn bill-pay">
+    Pay Bill
+  </div></a>
+{% elsif site.data.settings.allow_payments == "collect" %}
+  {% include btns/collect-checkout.html %}
+{% else %}
+  <div class="bm-btn bill-pay disabled">Pay Disabled</div>
+{% endif %}

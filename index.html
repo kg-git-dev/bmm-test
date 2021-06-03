@@ -1,0 +1,359 @@
+---
+layout: landing
+title: Home
+theid: 12
+redirect_from:
+  - /testimonials
+  - /faqs
+  - /events
+  - /treatment-team
+services:
+  - title: Counseling
+    message: <p>Need someone to listen?<br>We're here to help.</p>
+    link: /about/our-services/#counseling
+    image: /wp-content/uploads/bb-plugin/cache/Counseling-circle.jpg
+  - title: Psychiatry
+    message: <p>Each mind is unique.<br>Let us design your custom treatment plan.</p>
+    link: /about/our-services/#psychiatry
+    image: /wp-content/uploads/bb-plugin/cache/Psychiatry-circle.jpg
+  - title: Intensive Outpatient
+    message: <p>Need extra support?<br>This intensive program is for you.</p>
+    link: /for-patients/intensive-outpatient-program
+    image: /wp-content/uploads/bb-plugin/cache/Intensive-Outpatient-circle.jpg
+  - title: Advanced TMS Therapy
+    message: <p>Medication is not for everyone. Check this non-invasive, drug-free treatment alternative for depression.</p>
+    link: /advanced-tms-therapy
+    image: /wp-content/uploads/bb-plugin/cache/Advanced-TMS-Therapy-circle.jpg
+  - title: Life & Health Coaching
+    message: <p>Move from surviving to thriving with the support you need.</p>
+    link: /about/our-services/#coaching
+    image: /wp-content/uploads/2019/12/coaching-253.jpg
+---
+
+<style>
+  @media only screen and (min-width: 991px) {
+    .service-group {
+      display: flex;
+      justify-content: center;
+    }
+
+    .service-group.margin-top {
+      margin-top: 30px;
+    }
+  } 
+</style>
+
+
+<!-- <div class="video-container">
+	<div class="video-overlay"></div>
+	<video width="100%" autoplay loop muted>
+		<source type="video/mp4" src="/wp-content/uploads/2018/11/BMM-Testimonial.mp4?_=1">
+		<source type="video/webm" src="/wp-content/uploads/2018/11/BMM-Testimonial.webm?_=1">
+	</video>
+	<div class="content">
+		<h1 style="text-align: center;">Your mind is beautiful.<strong>We can help take care of
+			it.</strong>
+		</h1>
+		<a href="/about/our-services" title="Learn More" target="_self" class="fl-button" role="button">
+			<span class="fl-button-text">Learn More</span>
+		</a>
+		<a href="/for-patients/patient-portal" title="Patient Portal" target="_self" class="fl-button"
+			role="button">
+			<span class="fl-button-text">Patient Portal</span>
+		</a>
+	</div>
+</div> -->
+<div class="fl-builder-content fl-builder-content-12 fl-builder-content-primary fl-builder-global-templates-locked"
+		data-post-id="12">
+
+		{% include hero_section.html %}
+
+		<!-- <div class="fl-row fl-row-full-width fl-row-bg-color fl-node-585a769f64a0e our-service-section"
+			data-node="585a769f64a0e">
+			<div class="fl-row-content-wrap">
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+					<a href="https://beautiful-minds-wellness.teachable.com/p/spirituality-and-mental-health">
+						<img src="/wp-content/uploads/2020/01/Spirituality_preview_Leaderboard.png" width="100%" alt="">
+					</a>
+				</div>
+			</div>
+		</div> -->
+
+		<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-585a769f64a0e our-service-section"
+			data-node="585a769f64a0e">
+			<div class="fl-row-content-wrap">
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+					<a href="/register">
+						<img src="/uploads/group_coaching_banner.png" width="100%" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-585a769f64a0e our-service-section"
+			data-node="585a769f64a0e">
+			<div class="fl-row-content-wrap">
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+					<div class="fl-col-group fl-node-585a76e1d3df0 fl-col-group-custom-width" data-node="585a76e1d3df0">
+						<div class="fl-col fl-node-585a76e1d40d0" data-node="585a76e1d40d0">
+							<div class="fl-col-content fl-node-content">
+								<div class="fl-module fl-module-heading fl-node-585a72d61778e style-heading-h2"
+									data-node="585a72d61778e">
+									<div class="fl-module-content fl-node-content">
+										<h2 class="fl-heading">
+											<span class="fl-heading-text">Our Services</span>
+										</h2>
+									</div>
+								</div>
+								<div class="fl-module fl-module-rich-text fl-node-585b7884a7bf7 our-service-section-text"
+									data-node="585b7884a7bf7">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-rich-text">
+											<p style="text-align: center;">We offer a variety of treatment options with one goal in mind:
+												<em>a healthier, happier you.</em></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="service-group fl-col-group fl-node-585a769f698c9 fl-col-group-custom-width" data-node="585a769f698c9">
+            {% for service in page.services limit: 3 %}
+            <div class="fl-col fl-node-585a769f69b5c fl-col-small service-box" data-node="585a769f69b5c">
+							<div class="fl-col-content fl-node-content">
+								<div class="fl-module fl-module-callout fl-node-585a775045987" data-node="585a775045987">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-callout fl-callout-center fl-callout-has-photo fl-callout-photo-below-title">
+											<div class="fl-callout-content">
+												<div class="fl-callout-photo">
+													<div class="fl-photo fl-photo-crop-circle fl-photo-align-center" itemscope
+														itemtype="http://schema.org/ImageObject">
+														<div class="fl-photo-content fl-photo-img-jpg">
+															<a href="{{service.link}}" target="_self" itemprop="url"
+																title="{{service.title}}">
+																<img class="fl-photo-img wp-image-46 size-full"
+																	src="{{service.image}}"
+																	alt="{{service.title}}" title="{{service.title}}" itemprop="image"></a>
+
+														</div>
+													</div>
+												</div>
+												<h3 class="fl-callout-title"><span><a href="{{service.link}}"
+													target="_self" class="fl-callout-title-link">{{service.title}}</a></span></h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="service-group margin-top fl-col-group fl-node-585a769f698c9 fl-col-group-custom-width" data-node="585a769f698c9">
+            {% for service in page.services offset: 3 %}
+            <div class="fl-col fl-node-585a769f69b5c fl-col-small service-box" data-node="585a769f69b5c">
+							<div class="fl-col-content fl-node-content">
+								<div class="fl-module fl-module-callout fl-node-585a775045987" data-node="585a775045987">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-callout fl-callout-center fl-callout-has-photo fl-callout-photo-below-title">
+											<div class="fl-callout-content">
+												<div class="fl-callout-photo">
+													<div class="fl-photo fl-photo-crop-circle fl-photo-align-center" itemscope
+														itemtype="http://schema.org/ImageObject">
+														<div class="fl-photo-content fl-photo-img-jpg">
+															<a href="{{service.link}}" target="_self" itemprop="url"
+																title="{{service.title}}">
+																<img class="fl-photo-img wp-image-46 size-full"
+																	src="{{service.image}}"
+																	alt="{{service.title}}" title="{{service.title}}" itemprop="image"></a>
+
+														</div>
+													</div>
+												</div>
+												<h3 class="fl-callout-title"><span><a href="{{service.link}}"
+													target="_self" class="fl-callout-title-link">{{service.title}}</a></span></h3>
+												<!-- <div class="fl-callout-text-wrap">
+													<div class="fl-callout-text">
+														{{service.message}}
+													</div>
+													<div class="fl-callout-button">
+														<div class="fl-button-wrap fl-button-width-auto">
+															<a href="{{service.link}}" title="Learn More" target="_self"
+																class="fl-button" role="button">
+																<span class="fl-button-text">Learn More</span>
+															</a>
+														</div>
+													</div>
+												</div> -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+            </div>
+            {% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-585a794877313 testimonial-slider"
+			data-node="585a794877313">
+			<div class="fl-row-content-wrap patients-saying">
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+					<div class="fl-col-group fl-node-585a79487fcdd" data-node="585a79487fcdd">
+						<div class="fl-col fl-node-585a79487ff33" data-node="585a79487ff33">
+							<div class="fl-col-content fl-node-content">
+								<div class="fl-module fl-module-heading fl-node-585a794876dab style-heading-h2"
+									data-node="585a794876dab">
+									<div class="fl-module-content fl-node-content">
+										<h1 class="fl-heading">
+											<span class="fl-heading-text-light">What Patients are Saying</span>
+										</h1>
+									</div>
+								</div>
+								<div class="fl-module fl-module-html fl-node-585b7164ceff6" data-node="585b7164ceff6">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-html">
+
+											<div class="testimonials">
+												<div class="list_carousel">
+													<ul id="carousel-testimonials">
+														<li style="text-align: center;">
+															<p class="content">I have had a great experience here and would recommend it to anyone.
+																It’s nice to know that there is somewhere I can come to get myself on the right track.
+															</p>
+															<p class="author"><strong>Frank</strong>, Outpatient Psychiatry</p><br><br>
+														</li>
+
+														<li style="text-align: center;">
+															<p class="content">This program has been so helpful. I’ve learned so many tools to help me
+																with coping behaviors and overcoming addictive coping behaviors. I am so grateful for
+																this program. Thank you.</p>
+															<p class="author"><strong>Celeste</strong>, Former Intensive Outpatient Program Patient
+															</p><br><br>
+														</li>
+
+														<li style="text-align: center;">
+															<p class="content">“I enjoyed the remarkably beautiful and peaceful setting at Beautiful
+																Minds.” The entire staff made me feel comfortable and accepted.”
+
+																 
+
+																 </p>
+															<p class="author"><strong>Crystal</strong>, Outpatient Counseling</p><br><br>
+														</li>
+
+													</ul>
+												</div>
+												<div id="pager-testimonials" class="pager"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="patients-overlay"></div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fl-row fl-row-full-width fl-row-bg-none fl-node-585a791078a35 home-blog" data-node="585a791078a35">
+			<div class="fl-row-content-wrap">
+				<div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+					<div class="fl-col-group fl-node-585a79107949b" data-node="585a79107949b">
+						<div class="fl-col fl-node-585a7910794e3 blog-gallery-mess" data-node="585a7910794e3">
+							<div class="fl-col-content fl-node-content">
+								<div class="fl-module fl-module-heading fl-node-585a79107951f style-heading-h2"
+									data-node="585a79107951f">
+									<div class="fl-module-content fl-node-content">
+										<h2 class="fl-heading">
+											<span class="fl-heading-text">Mental Health & Wellness Articles</span>
+										</h2>
+									</div>
+								</div>
+								<div class="fl-module fl-module-rich-text fl-node-585b82b4c9294" data-node="585b82b4c9294">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-rich-text">
+											<p style="text-align: center;">Learn how to care for your beautiful mind.</p>
+										</div>
+									</div>
+								</div>
+								<div class="fl-module fl-module-post-grid fl-node-585a7bf3ce12c" data-node="585a7bf3ce12c">
+									<div class="fl-module-content fl-node-content">
+										<div class="fl-post-grid" itemscope="itemscope" itemtype="https://schema.org/Blog">
+
+											{% for post in site.posts limit: 3 %}
+											<div
+												class="fl-post-grid-post fl-post-grid-image-above-title fl-post-align-default post-2876 post type-post status-publish format-standard has-post-thumbnail hentry category-blog"
+												itemscope itemtype="https://schema.org/BlogPosting">
+
+												<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage"
+													itemid="{{ post.url }}"
+													content="{{post.title}}">
+												<meta itemprop="datePublished" content="{{ post.date | date: '%Y-%m-%d' }}">
+												<meta itemprop="dateModified" content="{{ post.updated_at | date: '%Y-%m-%d' }}">
+												<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+													<meta itemprop="name" content="Beautiful Minds Medical">
+												</div>
+												<div itemscope itemprop="author" itemtype="https://schema.org/Person">
+													<meta itemprop="url" content="author/bmmadmin">
+													<meta itemprop="name" content="{{ post.author }}">
+												</div>
+												<div itemscope itemprop="image" itemtype="https://schema.org/ImageObject">
+													<meta itemprop="url"
+														content="{{ post.image }}">
+													<meta itemprop="width" content="750">
+													<meta itemprop="height" content="500">
+												</div>
+												<div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter">
+													<meta itemprop="interactionType" content="https://schema.org/CommentAction">
+													<meta itemprop="userInteractionCount" content="0">
+												</div>
+												<div class="fl-post-grid-image">
+													<a href="{{post.url}}" rel="bookmark" title="{{post.title}}">
+														<img width="750" height="500"
+															src="{{post.image}}"
+															class="attachment-large size-large wp-post-image" alt="{{post.title}}"
+															title="{{post.title}}"
+															srcset="{{post.image}} 750w,{{post.med_image}} 300w"
+															sizes="(max-width: 750px) 100vw, 750px"></a>
+
+												</div>
+
+												<div class="fl-post-grid-text">
+
+													<h2 class="fl-post-grid-title" itemprop="headline">
+														<a href="{{post.url}}" title="{{post.title}}">{{post.title}}</a>
+													</h2>
+
+
+
+
+													<div class="fl-post-grid-content">
+														<p>{{ post.content | strip_newlines | strip_html | escape | truncatewords: 15 }}</p>
+														<!-- <a class="fl-post-grid-more" href="{{post.url}}"
+															title="{{post.title}}">Learn More</a> -->
+													</div>
+
+
+												</div>
+											</div>
+											{% endfor %}
+
+											<div class="fl-post-grid-sizer"></div>
+										</div>
+										<div class="fl-clear"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="uabb-js-breakpoint" class="uabb-js-breakpoint" style="display: none;"></div>

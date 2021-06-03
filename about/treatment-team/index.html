@@ -1,0 +1,41 @@
+---
+layout: grid
+title: Treatment Team
+theid: 2594
+---
+
+<div class="container bmm-pglayout1">
+	<div class="col">
+		<div class="team-grid">
+			<!-- <h1 class="team-title">Our Team</h1> -->
+			<h1 class="fl-heading first">
+				<span class="fl-heading-text">Our Team</span>
+			</h1>
+		
+			<div class="items">
+				{% assign members = site.treatment-team | sort: 'order' | where: "group", "tt" %}
+				{% for member in members %}
+					{% include grid-member.html member=member %}
+				{% endfor %}
+		
+				{% assign members = site.treatment-team | sort: 'order' | where: "group", "nurse" %}
+				{% for member in members %}
+					{% include grid-member.html member=member %}
+				{% endfor %}
+		
+				{% assign members = site.staff | sort: 'order' %}
+				{% for member in members %}
+					{% include grid-member.html member=member %}
+				{% endfor %}
+		
+				{% assign members = site.treatment-team | sort: 'order' | where: "group", "tms" %}
+				{% for member in members %}
+					{% include grid-member.html member=member %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="col">
+		{% include sidemenu.html %}
+	</div>
+</div>
