@@ -8,5 +8,5 @@ permalink: /revivetothrive/register/
     <input type="email" name="email" placeholder="Your Email">
     <input type="text" name="name" placeholder="Your Name">
     <input type="text" name="message" placeholder="Your Message">
-    <button type="submit">Send</button>
+    <button type="submit" onclick="window.location.href = 'https://kalosforms.com/beautifulminds/46dc66f6-6a30-4fa7-afe6-b1df60e8c90b';">Send</button>
 </form>
