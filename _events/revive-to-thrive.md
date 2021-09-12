@@ -17,7 +17,7 @@ permalink: /revivetothrive/register/
     min-width: 100%;
     border:none;"
     scrolling="no"
-    sandbox="allow-popups"
+    sandbox="allow-top-navigation allow-scripts allow-forms"
 >
 </iframe>
 <script type="text/javascript">
