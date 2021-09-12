@@ -15,7 +15,6 @@ permalink: /revivetothrive/register/
     frameborder="0"
     style="
     min-width: 100%;
-    height:539px;
     border:none;"
     scrolling="no"
     sandbox="allow-top-navigation allow-scripts allow-popups allow-forms"
