@@ -1,5 +1,5 @@
 ---
-layout: event
+layout: default
 title: Register for Revive to thrive
 permalink: /revivetothrive/register/
 ---
